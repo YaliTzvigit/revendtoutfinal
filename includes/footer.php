@@ -16,7 +16,7 @@
 
     <!-- css link custom -->
 
-    <link rel = "stylesheet" href ="footer.css"> 
+    <link rel = "stylesheet" href ="../includes/css/glbstyles.css"> 
 
     <title>REVENDTOUT</title>
 </head>

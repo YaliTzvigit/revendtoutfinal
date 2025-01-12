@@ -10,12 +10,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenue sur votre site!</title>
-    <link rel="stylesheet" href="stylesall.css">
+    <link rel="stylesheet" href="../includes/css/glbstyles.css">
 </head>
 <body><br>
-    <p> "Revendtout: La plateforme pour la revente de tout."</p> <br> <br>  <br>
+    <p> Bienvenue sur Revendtout. Votre plateforme pour acheter et revendre facilement.</p> <br> <br>  <br>
 
     <section class="container1" id="home">
        
@@ -70,8 +69,6 @@
             <img src="../images/ideas.png" alt="">
         </div>
     </section>
-
-
 </body>
 </html> <br><br><br><br>
 

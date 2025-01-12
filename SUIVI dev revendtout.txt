@@ -1,0 +1,38 @@
+
+REVENDTOUT : roadmap
+
+
+pour la section 'utilisateur connecté avec icon' > créer une page de profile pour l'utilisateur
+
+1/ Sécuriser encore plus :
+
+Utilise des requêtes préparées partout pour éviter les injections SQL.
+Ajoute des validations côté serveur pour t'assurer des données sécurisées.
+
+2/ Améliorer l'expérience utilisateur :
+
+Affiche des messages conviviaux après inscription ou connexion réussie.
+Implémente une fonctionnalité de mot de passe oublié.
+
+3/ Ajouter une base d’administration (optionnel) :
+
+Pour permettre à toi ou un administrateur de gérer les produits, tu peux développer un dashboard. Ce dashboard peut inclure :
+
+L’ajout, modification, suppression de produits.
+La gestion des catégories.
+
+
+4/ Responsive : boostrap ou autres … 
+
+5/ Backup du site web
+
+Points a ajouter : Ajouter un navbar 'VENDRE'
+page descrip.
+
+Electronique, Mode, Cosmétique, Maison et Jardin, Loisirs et Sport, Livres et Médias, Automobile, Autres
+
+
+On s'est arrêté sur la configuration de la page sell.php. > sell_action.php
+
+
+ 

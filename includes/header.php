@@ -1,25 +1,35 @@
+<?php
+session_start(); 
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="header.css">  
+    <title>Revendtout</title>
+    <link rel="stylesheet" href="../includes/css/glbstyles.css">
 </head>
 <body>
-    <section class="header">
-        <a href="" class="logo"> REVENDTOUT</a>
-
-        <nav class="nav" id="navbar">
-            <a href="" id="home">APERCU</a>
+    <header>
+        <div class="logo">REVENDTOUT</div>
+        <nav>
+            <a href="../public/index.php">ACCUEIL</a>
             <a href="../paysell/shop.php">ACHETER</a>
-            <a href="../paysell/sell.php">VENDRE</a>
-            <a href="" id="footer">NOUS</a>
-            <a href="" class="whatsapp">WHATSAPP</a>
-            <a href="" class="signlog">S'inscrire | Se connecter</a>
+            <a href="../paysell/sell.php">VENDRE UN ARTICLE</a>
+            <a href="" id="">NOUS</a>
+            <?php if (isset($_SESSION['user_name'])): ?>
+                <!-- Si l'utilisateur est connecté -->
+                <span class="user">
+                    <a href="../userprofile/profile.php"><i class="fas fa-user-circle"></i> &nbsp; </a> 
+                    <?= htmlspecialchars($_SESSION['user_name']) ?>
+                </span>
+                <a href="../auth/logout.php">Se déconnecter</a>
+            <?php else: ?>
+                <!-- Si l'utilisateur est déconnecté -->
+                <a href="../auth/signup.php">S'inscrire | Se connecter</a>
+            <?php endif; ?>
         </nav>
-    </section>
+    </header>
 </body>
 </html>
