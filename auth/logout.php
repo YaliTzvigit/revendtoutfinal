@@ -5,3 +5,5 @@ session_unset(); // Supprimer toutes les variables de session
 session_destroy(); // Détruire la session
 header("Location: ../public/index.php"); // Redirection vers la page d'accueil
 exit();
+
+?>

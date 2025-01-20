@@ -1,0 +1,196 @@
+
+
+ /* tousavoir.php */
+
+ @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+ html {
+    scroll-behavior: smooth;
+ }
+
+ .navbar
+ {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+ }
+
+.navbar .logo
+ {
+    padding: 10px;
+    background-color: #a64d16;
+    font-weight: 550;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 8px;    
+ }
+
+ .navbar .logo a {
+    text-decoration: none;
+    color: #fff;
+ }
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-right: 10px;
+    transition: color 0.3s;
+    color: #e8e7e7;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar ul li a {
+    color: #e8e7e7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+    justify-content: space-evenly;
+
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.auth-buttons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    color: rgb(201, 61, 10);
+}
+
+.auth-buttons a:hover {
+    color: #a64d16;
+    transition: 0.299ms ease;
+}
+
+/* Main content */
+
+main {
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-top: 60px;
+    
+}
+
+.help-center h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.help-section h2 {
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.help-section p, ol, ul {
+    font-size: 12px;
+    font-weight: 390;
+}
+
+.footer
+ {
+    background-color: #f8f8f8;
+    justify-content: center;
+
+ }
+
+ .footer p 
+ {
+    font-size: 13px;
+    color: rgb(67, 66, 66) !important;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+ }
+
+ .enhaut {
+    font-weight: bold;
+ }
+
+ .footer a {
+    text-decoration: none;
+    font-size: 19px;
+ }
+
+i:hover {
+    transition : ease-in-out 0.15s;
+    color: #a64d16;
+    font-size: 15px;
+ }
+
+ blockquote
+  {
+    font-size: 10px;
+    color: #474545e4;
+    text-align: center;
+  }
+
+
+  /* animation fadeIn */
+
+/* Animation fadeIn */
+/* Animations personnalisées */
+@keyframes slideFromTop {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Classes d'animation */
+.navbar.animate-top {
+    animation: slideFromTop 1s ease-in-out;
+}
+
+.help-center.animate-right {
+    animation: slideFromRight 1s ease-in-out;
+}
+
+.footer.animate-bottom {
+    animation: slideFromBottom 1s ease-in-out;
+}
+
+
+/* Responsive DESIGN */

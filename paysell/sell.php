@@ -38,11 +38,11 @@
 <br><br> <br>
 
 <!-- vente formulaire -->
-<h1> &nbsp;&nbsp; > &nbsp; Vendre son article </h1> <br><br>
+<h1> &nbsp;&nbsp; > &nbsp; Vendre son article </h1> <h1> &nbsp;&nbsp; < &nbsp; <a href="../paysell/shop.php">Revenir à la boutique  </h1> <br><br>
 <form action="" method="post" enctype="multipart/form-data">
     <div class="container">
         <div class="photo-upload">
-            <p>Ajoutez jusqu'à 20 photos. <a href="#">Comment faire ?</a></p> <br>
+            <p>Ajoutez jusqu'à 5 photos. <a href="../includes/toutsavoir.php">Comment faire ?</a></p> <br>
             <input type="file" name="addphoto[]" id="addphoto" accept="image/*" multiple style="display: none;">
             <div id="image-preview" class="image-preview"></div>
             <button type="button" id="add-more" class="add-photo-btn">+ Ajouter des photos</button>
@@ -72,7 +72,7 @@
         </div>
         <div class="form-section">
             <label for="price">Prix</label>
-            <input type="number" id="price" name="price" placeholder="0,00 €" step="0.01" required>
+            <input type="number" id="price" name="price" placeholder="0,00 F" step="0.01" required>
         </div>
     </div> <br>
 
@@ -83,14 +83,13 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const maxImages = 20; // Limite fixée à 20 images
+    const maxImages = 5;
     let currentImageCount = 0;
 
     const addPhotoInput = document.getElementById("addphoto");
     const imagePreviewDiv = document.getElementById("image-preview");
     const addMoreButton = document.getElementById("add-more");
 
-    // Ouvrir l'explorateur de fichiers au clic sur le bouton "+ Ajouter des photos"
     addMoreButton.addEventListener("click", () => {
       addPhotoInput.click();
     });
@@ -101,7 +100,7 @@
 
       for (let file of files) {
         if (currentImageCount >= maxImages) {
-          alert("Vous ne pouvez ajouter que jusqu'à 20 photos.");
+          alert("Vous ne pouvez ajouter que jusqu'à 5 photos.");
           return;
         }
 

@@ -12,12 +12,13 @@ session_start();
 </head>
 <body>
     <header>
-        <div class="logo">REVENDTOUT</div>
+        <div class="logo"><a href="../includes/index.php">REVENDTOUT</a></div>
         <nav>
-            <a href="../public/index.php">ACCUEIL</a>
-            <a href="../paysell/shop.php">ACHETER</a>
-            <a href="../paysell/sell.php">VENDRE UN ARTICLE</a>
-            <a href="" id="">NOUS</a>
+            <a href="../public/index.php">Accueil</a>
+            <a href="../paysell/shop.php">Acheter</a>
+            <a href="../paysell/sell.php">Vendre un article</a>
+            <a href="#about" id="">Nous</a>
+            <a href="#contact" id="">Contact</a>
             <?php if (isset($_SESSION['user_name'])): ?>
                 <!-- Si l'utilisateur est connecté -->
                 <span class="user">
@@ -27,7 +28,7 @@ session_start();
                 <a href="../auth/logout.php">Se déconnecter</a>
             <?php else: ?>
                 <!-- Si l'utilisateur est déconnecté -->
-                <a href="../auth/signup.php">S'inscrire | Se connecter</a>
+                <a href="../auth/signup.php"><i class="fa-regular fa-user"></i>&nbsp; &nbsp;S'inscrire | Se connecter</a>
             <?php endif; ?>
         </nav>
     </header>

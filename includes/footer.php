@@ -1,59 +1,69 @@
 
-
-
+<!-- footer -->
 
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font awesome cdjns / cdjns.com * -->
-
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <!-- swiper link -->
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
-    <!-- css link custom -->
-
-    <link rel = "stylesheet" href ="../includes/css/glbstyles.css"> 
-
-    <title>REVENDTOUT</title>
+    <link rel="stylesheet" href="../includes/glbstyles.css">
 </head>
-<body> 
-<section class="footer" id="footer">
-        <div class="bcontainer">
-            <div class="box">
-                <h3> LIENS </h3>
-                <a href="home.php">  <i class="fas fa-angle-right"></i> ACCUEIL </a>
-                <a href="about.php"> <i class="fas fa-angle-right"></i> SHOP </a>
-                <a href="package.php"><i class="fas fa-angle-right"></i> A PROPOS </a>
-                <a href="book.php"><i class="fas fa-angle-right"></i> CONTACT </a>
+<body>
+    <footer class="globalfooter" id="contact">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>REVENDTOUT</h3>
+                <ul>
+                    <li><a href="#about">Qui sommes-nous ?</a></li>
+                </ul>
             </div>
-
-            <div class="box">
-                <h3> EXTRA LINKS </h3>
-                <a href="#"> <i class="fas fa-angle-right"></i> Questions  </a>
-                <a href="#"> <i class="fas fa-angle-right"></i> About us </a>
+            <div class="footer-column">
+                <h3>Découvrir</h3>
+                <ul>
+                    <li><a href="">Vérification de l'article</a></li>
+                    
+                </ul>
             </div>
-
-            <div class="box">
-                <h3> CONTACT</h3>
-                <a href="#"> <i class="fas fa-phone"></i> 7 88 72 98 38 &nbsp;| &nbsp; 7 88 94 24 95  </a>
-                <a href="#"> <i class="fas fa-envelope"></i> mikiyg8@gmail.com </a>
-                <a href="#"> <i class="fas fa-map"></i> Abidjan, Cocody Riviera </a>
-            </div>
-
-            <div class="box">
-                <h3> SUIVEZ-NOUS </h3>
-                <a href="https://www.instagram.com/kfmiky/"> <i class="fab fa-instagram"></i> @kfmiky  </a>
-                <a href="https://www.linkedin.com/in/david-koffi-28223b29a/"> <i class="fab fa-linkedin"></i> @david koffi </a>
+            <div class="footer-column">
+                <h3>Aide</h3>
+                <ul>
+                    <li><a href="../includes/toutsavoir.php">Centre d'aide</a></li>
+                    <li><a href="../includes/toutsavoir.php">Vendre un article</a></li>
+                    <li><a href="../includes/toutsavoir.php">Acheter</a></li>
+                    <li><a href="../includes/toutsavoir.php">Paiement</a></li>
+                    <li><a href="../includes/toutsavoir.php">Confiance et sécurité</a></li>
+                </ul>
             </div>
         </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61556292128845"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@mikybkoffi"><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+            <div class="footer-bottom">
+                <p>
+                    Politique de Confidentialité | Politique de cookies | Paramètres des cookies | 
+                    Notre plateforme
+                </p><br>
+                <div class="copyright">
+                <blockquote><i class="fa-solid fa-phone"></i> &nbsp; 0788729838 / 0788942495 </blockquote>
+                <blockquote>&copy; 2025 - REVENDTOUT.COM </blockquote><br>
+                <a href="#home"><p class="haut"> &nbsp; <i class="fa-solid fa-arrow-up">&nbsp; EN HAUT</i></p></a>
+            </div>
+        </div>
+    </footer>
 
-        <div class="quote">Develop by <span> developer, All rights reserved! </span></div>
-    </section>
+    <!-- script anim -->  
+
+    <script>
+        const gfooter = document.querySelector('.globalfooter');
+        if (gfooter) {
+            gfooter.classList.add('animation-bas');
+        }
+    </script>
+    
 </body>
-
 </html>
-

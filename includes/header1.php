@@ -14,13 +14,13 @@
 </head>
 <body>
 <section class="header">
-        <a href="" class="logo"> REVENDTOUT</a>
+        <a href="../public/index.php" class="logo"> REVENDTOUT</a>
 
         <nav class="nav" id="navbar">
-            <a href="../public/index.php">< &nbsp; Retour à l'accueil</a>
-            <a href="../paysell/sell.php">VENDRE</a>
-            <a href="">NOUS</a>
-            <a href="" class="whatsapp">WHATSAPP</a>
+            <a href="../public/index.php">&lt; &nbsp; Retour à l'accueil</a>
+            <a href="../paysell/sell.php">Vendre un article</a>
+            <a href="#about">Nous</a>
+            <a href="#contact" class="whatsapp">Contact</a>
             <?php if (isset($_SESSION['user_name'])): ?>
                 <!-- Si l'utilisateur est connecté -->
                 <span class="user">
@@ -30,13 +30,12 @@
                 <a href="../auth/logout.php">Se déconnecter</a>
             <?php else: ?>
                 <!-- Si l'utilisateur est déconnecté -->
-                <a href="../auth/signup.php">S'inscrire | Se connecter</a>
+                <a href="../auth/signup.php"><i class="fa-regular fa-user"></i>&nbsp; &nbsp;S'inscrire | Se connecter</a>
             <?php endif; ?>
         </nav>
     </section>
 <br> <br><!-- sauts de ligne -->
 <section class="search">
-    <input type="search">
     <select>
         <option>Toutes les catégories...</option>
         <option>Electronique</option>
